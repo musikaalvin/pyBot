@@ -1,0 +1,37 @@
+{
+  "120363423951156373@g.us_217201411911702@lid": {
+    "count": 1,
+    "warnings": [
+      {
+        "reason": "No reason specified",
+        "date": 1776553141691
+      }
+    ]
+  },
+  "120363423951156373@g.us_266920020430961@lid": {
+    "count": 2,
+    "warnings": [
+      {
+        "reason": "No reason specified",
+        "date": 1776553222178
+      },
+      {
+        "reason": "stop sending stickers",
+        "date": 1776580346220
+      }
+    ]
+  },
+  "120363423951156373@g.us_28472059662580@lid": {
+    "count": 2,
+    "warnings": [
+      {
+        "reason": "No reason specified",
+        "date": 1776601844253
+      },
+      {
+        "reason": "No reason specified",
+        "date": 1776617861443
+      }
+    ]
+  }
+}

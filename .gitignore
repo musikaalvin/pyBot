@@ -1,0 +1,8 @@
+node_modules/
+session/
+temp/
+tmp/
+deploy_key
+deploy_key.pub
+.env
+*.log
