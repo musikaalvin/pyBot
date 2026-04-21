@@ -18,7 +18,7 @@ module.exports = {
     // Show users with 10+ commands OR the owner
     const ownerNum = String(config.ownerNumber?.[0] || '').replace(/[^\d]/g, '');
     users = users.filter(u => {
-      if (u.commandsUsed >= 10) return true;
+      if (u.commandsUsed >= 1) return true;
       // Include owner even with few commands
       const uId = String(u.userId || '').replace(/[^\d]/g, '');
       return uId === ownerNum || uId === ownerNum.slice(-9);
