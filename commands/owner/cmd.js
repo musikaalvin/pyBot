@@ -19,7 +19,8 @@ module.exports = {
       const from = msg.key.remoteJid;
       const sender = msg.key.participant || from;
       const senderNum = sender.split('@')[0];
-      const isOwner = config.ownerNumber.some(n => senderNum === n || senderNum.endsWith(n) || n.endsWith(senderNum));
+      const ownerNumbers = config.ownerNumber.flat();
+      const isOwner = ownerNumbers.some(n => senderNum === n || senderNum.endsWith(n) || n.endsWith(senderNum));
       
       if (!args.length) {
         return extra.reply('Usage: .cmd <command>\n.cmd date\n.cmd ls\n.cmd npm -v\n\nOwner: all commands allowed');
