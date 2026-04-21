@@ -12,7 +12,7 @@ module.exports = {
   category: 'owner',
   description: 'Run terminal commands',
   usage: '.cmd <command>',
-  ownerOnly: false,
+  ownerOnly: true,
   
   async execute(sock, msg, args, extra) {
     try {
