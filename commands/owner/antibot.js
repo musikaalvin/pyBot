@@ -1,9 +1,10 @@
+const path = require('path');
 /**
  * Anti-Bot Command - Enhanced anti-bot system
  */
 
 const database = require('../../database');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
   name: 'antibot',

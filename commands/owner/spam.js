@@ -1,9 +1,10 @@
+const path = require('path');
 /**
  * SPAM Command - Send repeated messages to a target
  * Safe version - only works in groups
  */
 
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
   name: 'spam',

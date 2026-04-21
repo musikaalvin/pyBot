@@ -3,7 +3,8 @@
  * Forward messages from groups/DMs to owner (persistent)
  */
 
-const config = require('/root/pyBot/config');
+const path = require('path');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
     name: 'spymode',
@@ -14,7 +15,7 @@ module.exports = {
     
     async execute(sock, msg, args, extra) {
         try {
-            const database = require('/root/pyBot/database');
+            const database = require(path.join(__dirname, '../../database'));
             const input = args[0]?.toLowerCase();
             const jid = msg.key.remoteJid;
             const isGroup = jid.endsWith('@g.us');

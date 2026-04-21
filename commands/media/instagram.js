@@ -1,9 +1,10 @@
+const path = require('path');
 /**
  * Instagram Downloader - Using ruhend-scraper
  */
 
 const { igdl } = require('ruhend-scraper');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 // Store processed message IDs to prevent duplicates
 const processedMessages = new Set();

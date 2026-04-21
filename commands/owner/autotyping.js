@@ -14,11 +14,11 @@ module.exports = {
   
   async execute(sock, msg, args, extra) {
     try {
-      const config = require('/root/pyBot/config');
+      const config = require(path.join(__dirname, '../../config'));
       const currentState = config.autoTyping || false;
       const newState = !currentState;
       
-      const configPath = '/root/pyBot/config.js';
+      const configPath = path.join(__dirname, '../../config.js');
       let configContent = fs.readFileSync(configPath, 'utf8');
       
       configContent = configContent.replace(

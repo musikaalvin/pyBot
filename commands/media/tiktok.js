@@ -1,3 +1,4 @@
+const path = require('path');
 /**
  * TikTok Downloader - Download/search TikTok videos
  */
@@ -5,7 +6,7 @@
 const { ttdl } = require('ruhend-scraper');
 const axios = require('axios');
 const APIs = require('../../utils/api');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 async function searchTikTok(query) {
   try {

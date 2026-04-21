@@ -1,3 +1,4 @@
+const path = require('path');
 /**
  * Ping Command - Check real bot response time and system stats
  */
@@ -13,7 +14,7 @@ module.exports = {
     
     async execute(sock, msg, args, extra) {
       try {
-        const config = require('/root/pyBot/config');
+        const config = require(path.join(__dirname, '../../config'));
         const start = Date.now();
         
         // Test actual send time

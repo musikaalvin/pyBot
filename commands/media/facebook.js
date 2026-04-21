@@ -1,10 +1,11 @@
+const path = require('path');
 /**
  * Facebook Downloader - Download Facebook videos
  */
 
 const { facebookdl } = require('@bochilteam/scraper-facebook');
 const axios = require('axios');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 // Store processed message IDs to prevent duplicates
 const processedMessages = new Set();

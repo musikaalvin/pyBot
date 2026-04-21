@@ -1,9 +1,10 @@
+const path = require('path');
 /**
  * Bot Mode Command
  * Switch between Public, Private, and Self modes
  */
 
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
   name: 'mode',

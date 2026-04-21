@@ -1,9 +1,10 @@
+const path = require('path');
 /**
  * GitHub Command - Show bot GitHub repository and stats
  */
 
 const axios = require('axios');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
     name: 'github',

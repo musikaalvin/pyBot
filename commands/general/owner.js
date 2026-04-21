@@ -1,8 +1,9 @@
+const path = require('path');
 /**
  * Owner Command - Sends bot owner's contact card (vCard)
  */
 
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
     name: 'owner',

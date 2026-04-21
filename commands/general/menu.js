@@ -2,9 +2,9 @@
  * Classic Menu Command - Generate full menu with bot info and system status
  */
 
-const { loadCommands } = require('../../utils/commandLoader');
-const config = require('/root/pyBot/config');
 const path = require('path');
+const { loadCommands } = require('../../utils/commandLoader');
+const config = require(path.join(__dirname, '../../config'));
 const fs = require('fs');
 const os = require('os');
 
@@ -94,7 +94,7 @@ module.exports = {
       text += `┃ 🧩 *Modules:* ${totalCommands}+\n`;
       
       // Add user count
-      const database = require('/root/pyBot/database');
+      const database = require(path.join(__dirname, '../../database'));
       const users = database.getAllUsers();
       const activeUsers = users.filter(u => u.commandsUsed >= 5).length;
       text += `┃ 👤 *Users:* ${activeUsers}+\n`;

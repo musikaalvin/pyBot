@@ -1,9 +1,10 @@
+const path = require('path');
 /**
  * Simi Simi Chatbot
  */
 
 const axios = require('axios');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 // Store active chat sessions (groupId/userId -> last activity time)
 const chatSessions = new Map();

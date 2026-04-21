@@ -1,10 +1,11 @@
+const path = require('path');
 /**
  * System Info Command - Display bot system information
  */
 
 const os = require('os');
 const fs = require('fs');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 const getDiskInfo = () => {
   try {

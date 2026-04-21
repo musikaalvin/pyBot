@@ -24,7 +24,7 @@ module.exports = {
 
     const fs = require('fs');
     const path = require('path');
-    const configPath = '/root/pyBot/config.js';
+    const configPath = path.join(__dirname, '../../config.js');
     
     try {
       let configFile = fs.readFileSync(configPath, 'utf8');
@@ -35,7 +35,7 @@ module.exports = {
       );
       
       fs.writeFileSync(configPath, configFile);
-      delete require.cache[require.resolve('/root/pyBot/config')];
+      delete require.cache[require.resolve(path.join(__dirname, '../../config'))];
       
       await extra.reply(
         enabled

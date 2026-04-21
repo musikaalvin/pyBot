@@ -1,9 +1,10 @@
+const path = require('path');
 /**
  * Warn Command - Warn a user
  */
 
 const database = require('../../database');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
   name: 'warn',

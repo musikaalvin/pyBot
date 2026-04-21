@@ -1,3 +1,4 @@
+const path = require('path');
 /**
  * Notify Command - Enable or disable new user welcome DM
  */
@@ -17,7 +18,7 @@ module.exports = {
     const option = args[0].toLowerCase();
 
     if (option === 'status') {
-      const config = require('/root/pyBot/config');
+      const config = require(path.join(__dirname, '../../config'));
       return extra.reply(
         config.welcomeDM ? '📢 Notify: ✅ ON' : '📢 Notify: ❌ OFF'
       );
@@ -30,7 +31,7 @@ module.exports = {
     const enabled = option === 'on';
 
     const fs = require('fs');
-    const configPath = '/root/pyBot/config.js';
+    const configPath = path.join(__dirname, '../../config.js');
     
     try {
       let configFile = fs.readFileSync(configPath, 'utf8');
@@ -41,7 +42,7 @@ module.exports = {
       );
       
       fs.writeFileSync(configPath, configFile);
-      delete require.cache[require.resolve('/root/pyBot/config')];
+      delete require.cache[require.resolve(path.join(__dirname, '../../config'))];
       
       await extra.reply(
         enabled

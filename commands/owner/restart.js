@@ -1,3 +1,4 @@
+const path = require('path');
 /**
  * Restart Command - Restart bot (Owner Only)
  */
@@ -12,8 +13,8 @@ module.exports = {
 
   async execute(sock, msg, args, extra) {
     try {
-      const config = require('/root/pyBot/config');
-      const database = require('/root/pyBot/database');
+      const config = require(path.join(__dirname, '../../config'));
+      const database = require(path.join(__dirname, '../../database'));
       const os = require('os');
       
       const users = database.getAllUsers();

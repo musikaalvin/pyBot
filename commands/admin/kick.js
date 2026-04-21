@@ -1,10 +1,11 @@
+const path = require('path');
 /**
  * Kick Command
  * Remove mentioned or replied users from the group
  * Includes robust self-kick prevention for PN/LID IDs
  */
 
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 const handler = require('../../handler');
 
 module.exports = {

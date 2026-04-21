@@ -1,8 +1,9 @@
+const path = require('path');
 /**
  * Giveaway Command
  */
 
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
   name: 'giveaway',

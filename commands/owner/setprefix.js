@@ -2,9 +2,9 @@
  * Set Prefix Command - Change bot command prefix
  */
 
-const config = require('/root/pyBot/config');
-const fs = require('fs');
 const path = require('path');
+const config = require(path.join(__dirname, '../../config'));
+const fs = require('fs');
 
 module.exports = {
   name: 'setprefix',
@@ -27,7 +27,7 @@ module.exports = {
       
       config.prefix = newPrefix;
       
-      const configPath = '/root/pyBot/config.js';
+      const configPath = path.join(__dirname, '../../config.js');
       let configContent = fs.readFileSync(configPath, 'utf8');
       configContent = configContent.replace(
         /prefix:\s*process\.env\.PREFIX\s*\|\|\s*['"][^'"]+['"]/,

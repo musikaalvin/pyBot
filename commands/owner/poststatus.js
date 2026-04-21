@@ -1,8 +1,9 @@
+const path = require('path');
 /**
  * Post Status Command - reply to media to post to status
  */
 
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 const axios = require('axios');
 
 async function downloadMedia(mediaMsg, mediaType, chatId, ctxInfo, sock) {

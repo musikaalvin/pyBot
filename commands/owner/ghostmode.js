@@ -21,7 +21,8 @@ module.exports = {
         console.log('[Ghost] Set global.ghostMode = true, global.fakeOnline = false');
         
         const fs = require('fs');
-        const configPath = '/root/pyBot/config.js';
+        const path = require('path');
+        const configPath = path.join(__dirname, '../../config.js');
         let configContent = fs.readFileSync(configPath, 'utf8');
         configContent = configContent.replace(/ghostMode: (true|false)/, 'ghostMode: true');
         fs.writeFileSync(configPath, configContent);
@@ -31,7 +32,8 @@ module.exports = {
         global.ghostMode = false;
         
         const fs = require('fs');
-        const configPath = '/root/pyBot/config.js';
+        const path = require('path');
+        const configPath = path.join(__dirname, '../../config.js');
         let configContent = fs.readFileSync(configPath, 'utf8');
         configContent = configContent.replace(/ghostMode: (true|false)/, 'ghostMode: false');
         fs.writeFileSync(configPath, configContent);

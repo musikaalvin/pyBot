@@ -1,9 +1,10 @@
+const path = require('path');
 /**
  * Pinterest Downloader - Download images/videos from Pinterest
  */
 
 const axios = require('axios');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 // Store processed message IDs to prevent duplicates
 const processedMessages = new Set();

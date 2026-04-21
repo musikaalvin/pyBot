@@ -1,3 +1,4 @@
+const path = require('path');
 /**
  * Users Command - List active bot users
  */
@@ -9,8 +10,8 @@ module.exports = {
   usage: '.users',
 
   async execute(sock, msg, args, extra) {
-    const database = require('/root/pyBot/database');
-    const config = require('/root/pyBot/config');
+    const database = require(path.join(__dirname, '../../database'));
+    const config = require(path.join(__dirname, '../../config'));
     
     let users = database.getAllUsers();
     

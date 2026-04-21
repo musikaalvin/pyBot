@@ -1,10 +1,11 @@
+const path = require('path');
 /**
  * Video Downloader - Download video from YouTube
  */
 
 const yts = require('yt-search');
 const APIs = require('../../utils/api');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
   name: 'ytvideo',

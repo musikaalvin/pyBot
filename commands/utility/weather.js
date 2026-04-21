@@ -1,9 +1,10 @@
+const path = require('path');
 /**
  * Weather Command
  */
 
 const APIs = require('../../utils/api');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
   name: 'weather',

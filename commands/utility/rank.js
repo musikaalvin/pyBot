@@ -11,7 +11,7 @@ try {
 const fs = require('fs');
 const path = require('path');
 const database = require('../../database');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
   name: 'rank',

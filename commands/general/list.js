@@ -5,7 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 const { loadCommands } = require('../../utils/commandLoader');
 const { sendButtons } = require('gifted-btns');
 

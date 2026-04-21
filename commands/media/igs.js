@@ -11,7 +11,7 @@ const fs = require('fs');
 const path = require('path');
 const webp = require('node-webpmux');
 const crypto = require('crypto');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 const { getTempDir, deleteTempFile } = require('../../utils/tempManager');
 
 // Function to extract unique media URLs (same as .ig command)

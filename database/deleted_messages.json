@@ -2876,111 +2876,6 @@
   ],
   "28472059662580@lid": [
     {
-      "id": "ACE0DA2B711C4A0E0758D5701A3E7DA9",
-      "content": {
-        "conversation": "Hi",
-        "messageContextInfo": {
-          "deviceListMetadata": {
-            "recipientKeyHash": "+dEPmLLI5zAIbQ==",
-            "recipientTimestamp": "1776530432"
-          },
-          "deviceListMetadataVersion": 2,
-          "messageSecret": "itHMimixtlC5hRoBFD67n4Nu/pvUNWxjOVh1BSY3lLA="
-        }
-      },
-      "timestamp": 1776705341525,
-      "sender": "28472059662580@lid",
-      "storedAt": 1776705341525
-    },
-    {
-      "id": "AC4AAF603E66734321B79F64FA16D919",
-      "content": {
-        "extendedTextMessage": {
-          "text": ". spy on",
-          "previewType": "NONE",
-          "contextInfo": {
-            "stanzaId": "ACE0DA2B711C4A0E0758D5701A3E7DA9",
-            "participant": "28472059662580@lid",
-            "quotedMessage": {
-              "conversation": "Hi"
-            },
-            "entryPointConversionSource": "global_search_new_chat",
-            "entryPointConversionApp": "whatsapp",
-            "entryPointConversionDelaySeconds": 431895,
-            "quotedType": "EXPLICIT"
-          },
-          "inviteLinkGroupTypeV2": "DEFAULT"
-        }
-      },
-      "timestamp": 1776705408384,
-      "sender": "256748675846@s.whatsapp.net",
-      "storedAt": 1776705408384
-    },
-    {
-      "id": "AC8E9B0DF7C98FC6B3550458ADCABE7D",
-      "content": {
-        "conversation": "Hi",
-        "messageContextInfo": {
-          "deviceListMetadata": {
-            "recipientKeyHash": "+dEPmLLI5zAIbQ==",
-            "recipientTimestamp": "1776530432"
-          },
-          "deviceListMetadataVersion": 2,
-          "messageSecret": "VlLQTsgRy5RezoaVNMppjFR12+hKf30sD5HIP46U+vA="
-        }
-      },
-      "timestamp": 1776705475883,
-      "sender": "28472059662580@lid",
-      "storedAt": 1776705475883
-    },
-    {
-      "id": "ACA995FCE3F744A4D6DA78A50C40690B",
-      "content": {
-        "audioMessage": {
-          "url": "https://mmg.whatsapp.net/v/t62.7117-24/590761228_1912298216140975_1841478048457516540_n.enc?ccb=11-4&oh=01_Q5Aa4QGRlEwyAA7qYlrXHkcXhbSrwik7i9cBgG16eX-Mk3tUtA&oe=6A0DF4E8&_nc_sid=5e03e0&mms3=true",
-          "mimetype": "audio/ogg; codecs=opus",
-          "fileSha256": "kQCVrYyGjch25MVbvpekKQAoa2AVzvI55HiuTDM9x1Q=",
-          "fileLength": "159424",
-          "seconds": 71,
-          "ptt": false,
-          "mediaKey": "tNXYTcUFmKEZXbydt4gGpBZcQj/D0JV35yKQFUnAd+o=",
-          "fileEncSha256": "wffMdalPD+TuDA5pCmyWQc7ak79vpGyYOdiJS46BwoE=",
-          "directPath": "/v/t62.7117-24/590761228_1912298216140975_1841478048457516540_n.enc?ccb=11-4&oh=01_Q5Aa4QGRlEwyAA7qYlrXHkcXhbSrwik7i9cBgG16eX-Mk3tUtA&oe=6A0DF4E8&_nc_sid=5e03e0&_nc_hot=1776707965",
-          "mediaKeyTimestamp": "1776707713",
-          "contextInfo": {
-            "forwardingScore": 1,
-            "isForwarded": true,
-            "entryPointConversionSource": "global_search_new_chat",
-            "entryPointConversionApp": "whatsapp",
-            "entryPointConversionDelaySeconds": 434454,
-            "forwardOrigin": "UNKNOWN"
-          },
-          "waveform": "AC1DABVKCQBFAAA2AABNAk0FQgBOV0wAS04AMylUAEEAEkwAEC0mMwM6FVJRAD89DEUnSwEAEDgkMDISRxE7AA=="
-        }
-      },
-      "timestamp": 1776707967751,
-      "sender": "256748675846@s.whatsapp.net",
-      "storedAt": 1776707967751
-    },
-    {
-      "id": "AC2308FE94B1C799D11C7BD29F37E5DB",
-      "content": {
-        "extendedTextMessage": {
-          "text": ". ping",
-          "previewType": "NONE",
-          "contextInfo": {
-            "entryPointConversionSource": "global_search_new_chat",
-            "entryPointConversionApp": "whatsapp",
-            "entryPointConversionDelaySeconds": 442792
-          },
-          "inviteLinkGroupTypeV2": "DEFAULT"
-        }
-      },
-      "timestamp": 1776716313827,
-      "sender": "256748675846@s.whatsapp.net",
-      "storedAt": 1776716313827
-    },
-    {
       "id": "ACCDCA11E3982657880AC1E294CE9DE1",
       "content": {
         "extendedTextMessage": {
@@ -3839,6 +3734,96 @@
       "timestamp": 1776726426114,
       "sender": "256748675846@s.whatsapp.net",
       "storedAt": 1776726426114
+    },
+    {
+      "id": "ACB9A6EE64E4312DAE873F0C32F1E6BA",
+      "content": {
+        "extendedTextMessage": {
+          "text": ". help",
+          "previewType": "NONE",
+          "contextInfo": {
+            "entryPointConversionSource": "global_search_new_chat",
+            "entryPointConversionApp": "whatsapp",
+            "entryPointConversionDelaySeconds": 458584
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        }
+      },
+      "timestamp": 1776732097636,
+      "sender": "256748675846@s.whatsapp.net",
+      "storedAt": 1776732097636
+    },
+    {
+      "id": "ACA7349344E22A0B2FA617B4F5F1C22B",
+      "content": {
+        "extendedTextMessage": {
+          "text": ". spy list",
+          "previewType": "NONE",
+          "contextInfo": {
+            "entryPointConversionSource": "global_search_new_chat",
+            "entryPointConversionApp": "whatsapp",
+            "entryPointConversionDelaySeconds": 458596
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        }
+      },
+      "timestamp": 1776732109008,
+      "sender": "256748675846@s.whatsapp.net",
+      "storedAt": 1776732109008
+    },
+    {
+      "id": "AC1B64250088629F218AE29FF78C536A",
+      "content": {
+        "extendedTextMessage": {
+          "text": ". menu",
+          "previewType": "NONE",
+          "contextInfo": {
+            "entryPointConversionSource": "global_search_new_chat",
+            "entryPointConversionApp": "whatsapp",
+            "entryPointConversionDelaySeconds": 458602
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        }
+      },
+      "timestamp": 1776732114814,
+      "sender": "256748675846@s.whatsapp.net",
+      "storedAt": 1776732114814
+    },
+    {
+      "id": "ACEA39ACAAB0D80EAC8E608138EA7208",
+      "content": {
+        "extendedTextMessage": {
+          "text": ". antibot",
+          "previewType": "NONE",
+          "contextInfo": {
+            "entryPointConversionSource": "global_search_new_chat",
+            "entryPointConversionApp": "whatsapp",
+            "entryPointConversionDelaySeconds": 458619
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        }
+      },
+      "timestamp": 1776732131847,
+      "sender": "256748675846@s.whatsapp.net",
+      "storedAt": 1776732131847
+    },
+    {
+      "id": "ACDD9F2F17FA4C5637198B7A5F83188B",
+      "content": {
+        "extendedTextMessage": {
+          "text": ". restart",
+          "previewType": "NONE",
+          "contextInfo": {
+            "entryPointConversionSource": "global_search_new_chat",
+            "entryPointConversionApp": "whatsapp",
+            "entryPointConversionDelaySeconds": 458878
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        }
+      },
+      "timestamp": 1776732391190,
+      "sender": "256748675846@s.whatsapp.net",
+      "storedAt": 1776732391190
     }
   ],
   "217201411911702@lid": [
@@ -5229,60 +5214,6 @@
   ],
   "180840302698601@lid": [
     {
-      "id": "AC151A0748FD3ADCFA5814943C6DA7D2",
-      "content": {
-        "extendedTextMessage": {
-          "text": ". ai print the word pyBot 100 times",
-          "previewType": "NONE",
-          "contextInfo": {
-            "entryPointConversionSource": "global_search_new_chat",
-            "entryPointConversionApp": "whatsapp",
-            "entryPointConversionDelaySeconds": 444952
-          },
-          "inviteLinkGroupTypeV2": "DEFAULT"
-        }
-      },
-      "timestamp": 1776718470961,
-      "sender": "256748675846@s.whatsapp.net",
-      "storedAt": 1776718470961
-    },
-    {
-      "id": "AC9C23A5D065DDCBA2F84BD8C46C3442",
-      "content": {
-        "extendedTextMessage": {
-          "text": ". ai pyBot 100",
-          "previewType": "NONE",
-          "contextInfo": {
-            "entryPointConversionSource": "global_search_new_chat",
-            "entryPointConversionApp": "whatsapp",
-            "entryPointConversionDelaySeconds": 444963
-          },
-          "inviteLinkGroupTypeV2": "DEFAULT"
-        }
-      },
-      "timestamp": 1776718482835,
-      "sender": "256748675846@s.whatsapp.net",
-      "storedAt": 1776718482835
-    },
-    {
-      "id": "AC6CDC0733EF4652F6F49187A6B8A843",
-      "content": {
-        "extendedTextMessage": {
-          "text": ". restart",
-          "previewType": "NONE",
-          "contextInfo": {
-            "entryPointConversionSource": "global_search_new_chat",
-            "entryPointConversionApp": "whatsapp",
-            "entryPointConversionDelaySeconds": 445207
-          },
-          "inviteLinkGroupTypeV2": "DEFAULT"
-        }
-      },
-      "timestamp": 1776718726607,
-      "sender": "256748675846@s.whatsapp.net",
-      "storedAt": 1776718726607
-    },
-    {
       "id": "ACA0B74DAACBEA189C3AE6EFB9A8575D",
       "content": {
         "extendedTextMessage": {
@@ -6153,6 +6084,60 @@
       "timestamp": 1776726388806,
       "sender": "256748675846@s.whatsapp.net",
       "storedAt": 1776726388806
+    },
+    {
+      "id": "ACB87840286D0886CA385C026E6EB669",
+      "content": {
+        "extendedTextMessage": {
+          "text": ". ping",
+          "previewType": "NONE",
+          "contextInfo": {
+            "entryPointConversionSource": "global_search_new_chat",
+            "entryPointConversionApp": "whatsapp",
+            "entryPointConversionDelaySeconds": 458537
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        }
+      },
+      "timestamp": 1776732058094,
+      "sender": "256748675846@s.whatsapp.net",
+      "storedAt": 1776732058094
+    },
+    {
+      "id": "AC23FC000439232E24DB75753FCA37CA",
+      "content": {
+        "extendedTextMessage": {
+          "text": ". menu",
+          "previewType": "NONE",
+          "contextInfo": {
+            "entryPointConversionSource": "global_search_new_chat",
+            "entryPointConversionApp": "whatsapp",
+            "entryPointConversionDelaySeconds": 458548
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        }
+      },
+      "timestamp": 1776732067070,
+      "sender": "256748675846@s.whatsapp.net",
+      "storedAt": 1776732067070
+    },
+    {
+      "id": "AC152F8A7EB3C20722229FD404238983",
+      "content": {
+        "extendedTextMessage": {
+          "text": ". menu",
+          "previewType": "NONE",
+          "contextInfo": {
+            "entryPointConversionSource": "global_search_new_chat",
+            "entryPointConversionApp": "whatsapp",
+            "entryPointConversionDelaySeconds": 458900
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        }
+      },
+      "timestamp": 1776732419394,
+      "sender": "256748675846@s.whatsapp.net",
+      "storedAt": 1776732419394
     }
   ],
   "210879035527320@lid": [

@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const http = require('http');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 const MAX_REDIRECTS = 5;
 

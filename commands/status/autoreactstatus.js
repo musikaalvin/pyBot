@@ -1,3 +1,4 @@
+const path = require('path');
 /**
  * Auto React Status Command
  * Toggle automatic reacting to status updates
@@ -13,11 +14,11 @@ module.exports = {
     isOwnerOnly: false,
     execute: async (sock, msg, args, { from, sender, isGroup, groupMetadata, isOwner, isAdmin, isBotAdmin, isMod, reply, react }) => {
         try {
-            const config = require('/root/pyBot/config');
+            const config = require(path.join(__dirname, '../../config'));
             const currentState = config.autoReactStatus || false;
             const newState = !currentState;
             
-            const configPath = '/root/pyBot/config.js';
+            const configPath = path.join(__dirname, '../../config.js');
             const fs = require('fs');
             let configContent = fs.readFileSync(configPath, 'utf8');
             
@@ -27,7 +28,7 @@ module.exports = {
             );
             
             fs.writeFileSync(configPath, configContent);
-            delete require.cache[require.resolve('/root/pyBot/config')];
+            delete require.cache[require.resolve(path.join(__dirname, '../../config'))];
             
             const stateText = newState ? 'ON' : 'OFF';
             await reply(`✅ Auto React Status is now ${stateText}.`);

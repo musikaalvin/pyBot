@@ -1,8 +1,9 @@
+const path = require('path');
 /**
  * Help Command - Show detailed help for specific commands
  */
 
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 const { loadCommands } = require('../../utils/commandLoader');
 
 module.exports = {

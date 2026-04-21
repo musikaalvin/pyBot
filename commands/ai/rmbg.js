@@ -1,9 +1,10 @@
+const path = require('path');
 /**
  * Remove Image Background
  */
 
 const axios = require('axios');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 const processedMessages = new Set();
 

@@ -1,3 +1,4 @@
+const path = require('path');
 /**
  * Pies Command - Get random pies images by country
  */
@@ -21,7 +22,7 @@ module.exports = {
                    '';
       
       // Extract command from message (e.g., ".india" or ".pies india")
-      const config = require('/root/pyBot/config');
+      const config = require(path.join(__dirname, '../../config'));
       const prefix = config.prefix || '.';
       const parts = text.trim().split(/\s+/);
       const commandUsed = parts[0]?.replace(prefix, '').toLowerCase() || '';

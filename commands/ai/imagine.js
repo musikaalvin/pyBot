@@ -1,9 +1,10 @@
+const path = require('path');
 /**
  * AI Image Generation
  */
 
 const APIs = require('../../utils/api');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 const axios = require('axios');
 
 const processedMessages = new Set();

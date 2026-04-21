@@ -1,8 +1,9 @@
+const path = require('path');
 /**
  * Uptime Command - Display bot uptime since it was started
  */
 
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 /**
  * Format time difference into human-readable string

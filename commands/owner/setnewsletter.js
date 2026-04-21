@@ -5,7 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
   name: 'setnewsletter',
@@ -78,7 +78,7 @@ module.exports = {
       }
       
       // Update config.js
-      const configPath = '/root/pyBot/config.js';
+      const configPath = path.join(__dirname, '../../config.js');
       let configContent = fs.readFileSync(configPath, 'utf8');
       
       // Check if newsletterJid already exists in config

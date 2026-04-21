@@ -2,9 +2,9 @@
  * Set Bot Name Command - Change bot name in config
  */
 
-const config = require('/root/pyBot/config');
-const fs = require('fs');
 const path = require('path');
+const config = require(path.join(__dirname, '../../config'));
+const fs = require('fs');
 
 module.exports = {
   name: 'setbotname',
@@ -46,7 +46,7 @@ module.exports = {
       
       config.botName = newBotName;
       
-      const configPath = '/root/pyBot/config.js';
+      const configPath = path.join(__dirname, '../../config.js');
       let configContent = fs.readFileSync(configPath, 'utf8');
       
       configContent = configContent.replace(
@@ -55,7 +55,7 @@ module.exports = {
       );
       
       fs.writeFileSync(configPath, configContent, 'utf8');
-      delete require.cache[require.resolve('/root/pyBot/config')];
+      delete require.cache[require.resolve(path.join(__dirname, '../../config'))];
       
       await extra.reply(`✅ Bot name changed to: *${newBotName}*\n\nThe new name will be used in menus and other places.`);
       

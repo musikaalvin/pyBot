@@ -9,7 +9,7 @@ const crypto = require('crypto');
 const { exec } = require('child_process');
 const { downloadMediaMessage } = require('@whiskeysockets/baileys');
 const webp = require('node-webpmux');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 const { getTempDir, deleteTempFile } = require('../../utils/tempManager');
 
 // Max file size: 50MB

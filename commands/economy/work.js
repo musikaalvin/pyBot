@@ -1,9 +1,10 @@
+const path = require('path');
 /**
  * Work Command
  */
 
 const database = require('../../database');
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 const jobs = [
   { min: 10, max: 50, name: 'freelance coding' },

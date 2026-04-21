@@ -1,8 +1,9 @@
+const path = require('path');
 /**
  * Poll Command - WhatsApp native poll
  */
 
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
   name: 'poll',

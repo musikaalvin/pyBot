@@ -18,11 +18,11 @@ module.exports = {
     
     execute: async (sock, msg, args, extra) => {
         try {
-            const configPath = '/root/pyBot/config.js';
+            const configPath = path.join(__dirname, '../../config.js');
             let configContent = fs.readFileSync(configPath, 'utf8');
             
             const subCmd = args[0]?.toLowerCase() || 'status';
-            const config = require('/root/pyBot/config');
+            const config = require(path.join(__dirname, '../../config'));
             
             if (subCmd === 'status' || !args[0]) {
                 const isEnabled = config.fakeOnline || false;
@@ -49,7 +49,7 @@ module.exports = {
                     'fakeOnline: true'
                 );
                 fs.writeFileSync(configPath, configContent);
-                delete require.cache[require.resolve('/root/pyBot/config')];
+                delete require.cache[require.resolve(path.join(__dirname, '../../config'))];
                 global.fakeOnline = true;
                 return extra.reply(`✅ Fake Online enabled!\n\nBot will appear online to others.`);
             }
@@ -60,7 +60,7 @@ module.exports = {
                     'fakeOnline: false'
                 );
                 fs.writeFileSync(configPath, configContent);
-                delete require.cache[require.resolve('/root/pyBot/config')];
+                delete require.cache[require.resolve(path.join(__dirname, '../../config'))];
                 global.fakeOnline = false;
                 return extra.reply(`❌ Fake Online disabled.`);
             }
@@ -76,7 +76,7 @@ module.exports = {
                     `fakeLastSeen: '${customText}'`
                 );
                 fs.writeFileSync(configPath, configContent);
-                delete require.cache[require.resolve('/root/pyBot/config')];
+                delete require.cache[require.resolve(path.join(__dirname, '../../config'))];
                 
                 return extra.reply(`✅ Custom last seen set!\n\nNow showing: "last seen ${customText}"`);
             }
@@ -92,7 +92,7 @@ module.exports = {
                     `fakeStatus: '${customText}'`
                 );
                 fs.writeFileSync(configPath, configContent);
-                delete require.cache[require.resolve('/root/pyBot/config')];
+                delete require.cache[require.resolve(path.join(__dirname, '../../config'))];
                 
                 return extra.reply(`✅ Custom status set!\n\nStatus: ${customText}`);
             }
@@ -107,7 +107,7 @@ module.exports = {
                     `fakeStatus: null`
                 );
                 fs.writeFileSync(configPath, configContent);
-                delete require.cache[require.resolve('/root/pyBot/config')];
+                delete require.cache[require.resolve(path.join(__dirname, '../../config'))];
                 
                 return extra.reply(`✅ Fake online settings cleared!`);
             }

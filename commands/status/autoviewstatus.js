@@ -1,8 +1,9 @@
+const path = require('path');
 /**
  * Auto View Status Command
  */
 
-const config = require('/root/pyBot/config');
+const config = require(path.join(__dirname, '../../config'));
 
 module.exports = {
   name: 'autoviewstatus',
@@ -35,7 +36,7 @@ module.exports = {
         }
       } else {
         if (setting === 'on' || setting === 'off') {
-          const configPath = '/root/pyBot/config.js';
+          const configPath = path.join(__dirname, '../../config.js');
           const fs = require('fs');
           let c = fs.readFileSync(configPath, 'utf8');
           c = c.replace(
@@ -43,10 +44,10 @@ module.exports = {
             'autoViewStatus: ' + (setting === 'on')
           );
           fs.writeFileSync(configPath, c);
-          delete require.cache[require.resolve('/root/pyBot/config')];
+          delete require.cache[require.resolve(path.join(__dirname, '../../config'))];
           extra.reply('Auto View Status ' + (setting === 'on' ? 'enabled' : 'disabled') + ' globally!');
         } else {
-          const cfg = require('/root/pyBot/config');
+          const cfg = require(path.join(__dirname, '../../config'));
           extra.reply('Status: ' + (cfg.autoViewStatus ? 'enabled' : 'disabled') + ' | Use .autoviewstatus on/off');
         }
       }
